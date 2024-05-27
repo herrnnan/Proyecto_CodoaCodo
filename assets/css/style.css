@@ -214,3 +214,8 @@ footer {
     margin-top: 10px; /* margen superior */
     color: #c2c8c5 !important; /* color del texto */
 }
+
+body, .contenido {
+    margin: 0; /* elimina el margen */
+    padding: 0; /* elimina el relleno */
+}
