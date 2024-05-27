@@ -1,56 +1,69 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     background: #181818;
     color: white;
     font-family: 'Quicksand', sans-serif;
     padding: 0 1.5em;
+    margin: 0; /* Añadido para asegurar que no haya margen externo */
 }
-.contenido{
+
+.contenido {
     max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 1.5em;
+    margin-bottom: 150px;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
 }
-.logo{
+
+.logo {
     text-align: center;
     font-size: 3em;
 }
+
 .logo span {
     color: rgb(12, 2, 56);
 }
-.contenedorPrincipal{
+
+.contenedorPrincipal {
     box-shadow: 0 0 20px 0 rgba(225, 225, 225, 1.3);
 }
 
-.contenedorPrincipal > *{
+.contenedorPrincipal > * {
     padding: 1em;
 }
-.formularioContacto{
+
+.formularioContacto {
     background-color: rgb(32, 32, 32);
-    
+    padding: 1em;
+    margin-bottom: 20px; /* Reducimos el margen inferior del formulario */
 }
-.formularioInformacion{
+
+.formularioInformacion {
     background-color: #000;
 }
 
-.formularioContacto form{
+.formularioContacto form {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.formularioContacto form p{
+
+.formularioContacto form p {
     margin: 0;
     padding: 1em;
 }
-.block{
+
+.block {
     grid-column: 1/3;
 }
 
 .formularioContacto button,
 .formularioContacto textarea,
-.formularioContacto input{
+.formularioContacto input {
     width: 100%;
     padding: .9em;
     border: none;
@@ -59,47 +72,94 @@ body{
     color: #fff;
 }
 
-.formularioContacto form button{
+.formularioContacto form button {
     background: rgb(26, 43, 192);
     border: 0;
     text-transform: uppercase;
     padding: 1em;
 }
+
 .formularioContacto button:hover,
-.formularioContacto button:focus{
+.formularioContacto button:focus {
     background: #0ef806;
     color: #000;
     transition: background-color 1s ease-out;
     outline: 0;
 }
+
 .formularioInformacion h4,
 .formularioInformacion ul,
-.formularioInformacion p{
+.formularioInformacion p {
     text-align: none;
     margin: 0;
 }
-.formularioInformacion ul{
+
+.formularioInformacion ul {
     list-style: none;
     padding: 0;
 }
-.formularioInformacion ul li{
+
+.formularioInformacion ul li {
     padding: .3em;
 }
 
 /* LARGE SCREEN */
-@media (min-width: 700px){
-    body{
+@media (min-width: 700px) {
+    body {
         padding: 0 4rem;
-}
-.contenedorPrincipal{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-.contenedorPrincipal > * {
-    padding: 2em;
+        margin: 0; /* Añadido para asegurar que no haya margen externo */
+    }
+
+    .contenedorPrincipal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contenedorPrincipal > * {
+        padding: 2em;
+    }
+
+    .formularioContacto h4 ul p {
+        padding: 1em;
+        text-align: left;
+    }
 }
 
-.formularioContacto h4 ul p{
-    padding: 1em;
-    text-align: left;
+footer {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #1b243a;
+    text-align: center;
+    color: #c2c8c5;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.footer-link {
+    color: #c2c8c5;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+}
+
+.footer-text {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #1b243a;
+    text-align: center;
+    color: #c2c8c5;
 }

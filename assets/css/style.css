@@ -184,38 +184,49 @@ main{
 
 /* estilo de pie de página */
 footer {
-    position: absolute; /* posición absoluta */
-    bottom: 0; /* se adhiere al borde inferior de la ventana */
-    width: 100%; /* ocupa todo el ancho */
-    padding: 20px 0; /* padding superior e inferior */
-    background-color: #1b243a !important; /* color de fondo */
-    text-align: center; /* centrar horizontalmente */
-    color: #c2c8c5 !important; /* color del texto */
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    padding: 20px 0; /* Padding superior e inferior */
+    background-color: #1b243a; /* Color de fondo */
+    text-align: center; /* Centrar horizontalmente */
+    color: #c2c8c5; /* Color del texto */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    margin-right: 0; /* Elimina el margen derecho */
+
+}
+
+.contacto-content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between; /* distribución equitativa de los elementos */
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 0; /* padding superior e inferior */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    margin-left: 0; /* Elimina el margen izquierdo */
+    margin-right: 0; /* Elimina el margen derecho */
 }
 
 .footer-link {
-    color: #c2c8c5 !important; /* color del enlace */
-    text-decoration: none; /* sin subrayado */
-    padding: 0 20px; /* padding a los lados */
+    color: #c2c8c5;
+    text-decoration: none;
+    padding: 0 20px;
 }
 
 .footer-link:hover {
-    color: #ffffff !important; /* color del enlace al pasar el mouse */
+    color: #ffffff;
 }
 
 .footer-text {
-    margin-top: 10px; /* margen superior */
-    color: #c2c8c5 !important; /* color del texto */
-}
-
-body, .contenido {
-    margin: 0; /* elimina el margen */
-    padding: 0; /* elimina el relleno */
+    margin-top: 10px;
+    color: #c2c8c5;
+    padding: 20px 0;
+    background-color: #1b243a;
+    text-align: center;
+    margin-left: 0; /* Elimina el margen izquierdo */
+    margin-right: 0; /* Elimina el margen derecho */
 }
