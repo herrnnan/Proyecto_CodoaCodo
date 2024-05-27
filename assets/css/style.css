@@ -184,6 +184,9 @@ main{
 
 /* estilo de pie de página */
 footer {
+    position: absolute; /* posición absoluta */
+    bottom: 0; /* se adhiere al borde inferior de la ventana */
+    width: 100%; /* ocupa todo el ancho */
     padding: 20px 0; /* padding superior e inferior */
     background-color: #1b243a !important; /* color de fondo */
     text-align: center; /* centrar horizontalmente */
