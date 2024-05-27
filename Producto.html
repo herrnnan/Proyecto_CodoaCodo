@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,19 +55,125 @@
                 </div>
             </div>
         </nav>
-    </main>
+    
 
+        <!-- Carrusel de imágenes -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
 
+            <!-- Imágenes del carrusel -->
+            <div class="carousel-item active">
+                <img src="<?=base_url('assets/img/carrusel1.png')?>" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="<?=base_url('assets/img/carrusel2.png')?>" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="<?=base_url('assets/img/carrusel3.png')?>" class="d-block w-100" alt="...">
+            </div>
+            </div>
 
-
-
-
-
-
-
-
+        <!-- Botones de navegación del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
     
+        <!-- Título de bienvenida -->
+        <h1 class="display-4 text-center pt-5">¡Bienvenido a Blendly!</h1>
+
+        <!-- Contenedor del texto con borde -->
+        <div class="clearfix">
+            <div class="col-md-6 bordered-text">
+            <p class="lead">Somos mucho más que una tienda de bebidas, no solo nos preocupamos por ofrecerte bebidas excepcionales, sino que también nos esforzamos por proporcionarte una experiencia de compra única. Descubre cómo cada botella cuenta una historia propia, llena de calidad, frescura y sabor incomparables.
+                <br><a href="<?php echo base_url('quieneSomos');?>" class="nav-link d-inline-block">Ver más...</button></a>
+            </p>
+            <p class="lead">¡Te invitamos a sumergirte en nuestro mundo y disfrutar de la excelencia en cada sorbo!</p>
+            
+            <!-- Botón de explorar catálogo -->
+            <a href="<?=base_url('productos')?>" class="btn btn-light custom-link mt-3 d-inline-block">Explora nuestro catálogo</a>
+            </div>
+            
+        <!-- Imagen de la mascota -->
+            <img src="<?php echo base_url('assets/img/mapache00.png');?>" class="col-md-6 float-md-end mb-1 ms-md-3 bordered-image" alt="...">
+        </div>
+
+        <!-- Texto secundario -->
+        <small class="text-segundos display-6 text-center">¿Qué vas a tomar hoy? <br></small>
+
+        <!-- Título de productos destacados -->
+        <div class="text pt-5">
+                    <h3 class="display-4 text-center mb-4">Productos Destacados</h3>
+        </div>
+
+        <!-- Contenedor de productos destacados -->
+        <div class="conteiner-car">
+            <div class="row-principal row row-cols-1 row-cols-md-2 mt-auto mb-5">
+
+            <!-- Tarjetas de producto destacado -->
+            <div class="col">
+                <div class="card border border-5 mt-5">
+                    <a href="<?=base_url('productos')?>"><img src="<?=base_url('assets/img/producto/somul.jpeg')?>" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                    <h5 class="card-title">Somul</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border border-5 mt-5">
+                    <a href="<?=base_url('productos')?>"><img src="<?=base_url('assets/img/producto/naturalmarc.jpeg')?>" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                    <h5 class="card-title">Water Sparkling</h5>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Título de últimos ingresos -->
+        <div class="text pt-3">
+                    <h3 class="display-5 text-center mb-4">Ultimos Ingresos!</h3>
+        </div>
+
+        <!-- Contenedor de últimos ingresos -->
+        <div class="conteiner-car">
+            <div class="row-principal row row-cols-1 row-cols-md-3 mt-auto mb-5">
+
+            <!-- Tarjetas de último ingreso -->
+            <div class="col">
+                <div class="card border border-5 mt-5">
+                    <a href="<?=base_url('productos')?>"><img src="<?=base_url('assets/img/producto/blackmarc.jpeg')?>" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                    <h5 class="card-title">Scorttish Heart</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border border-5 mt-5">
+                    <a href="<?=base_url('productos')?>"><img src="<?=base_url('assets/img/producto/whiteberd.jpeg')?>" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                    <h5 class="card-title">Berd</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border border-5 mt-5">
+                    <a href="<?=base_url('productos')?>"><img src="<?=base_url('assets/img/producto/somulexcl.jpeg')?>" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                    <h5 class="card-title">Somul Exclusive</h5>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+  
 
 
     
