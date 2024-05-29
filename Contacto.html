@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/formulario.css">
     <title>Contacto</title>
 
     <!-- Icono de la pestaña del navegador -->
@@ -58,56 +57,66 @@
         </nav>
     </main>
 
-    <div class="contenido">
-        <h1>Contácta<span>nos</span></h1>
+    <div class="container-contacto p-5">
+        <div class="row row-cols-1 row-cols-md-2">
 
-        <div class="contenedorPrincipal">
-            <div class="formularioContacto">
-                <h3>Contacto</h3>
-                <form action="#">
-                    <p>
-                        <label for="Nombre">Nombre</label>
-                        <input type="text" name="Nombre">
-                    </p>
-                    <p>
-                        <label for="Correo">Correo</label>
-                        <input type="email" name="Correo">
-                    </p>
-                    <p>
-                        <label for="Telefono">Telefono</label>
-                        <input type="tel" name="Telefono">
-                    </p>
-                    <p>
-                        <label for="Comentarios">Comentarios</label>
-                        <input type="text" name="Comentarios">
-                    </p>
-                    <p class="block">
-                        <p class="block">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea name="mensaje" id="" rows="3"></textarea>
-                        </p>
-                        <button class="block" type="submit">
-                            Send
-                        </button>
-                    </form>
+        <!-- Formulario de contacto -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header text-center">Formulario de Contacto:</div>
+
+                    <div class="card-body">
+                        <!-- Campos del formulario -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input id="email" type="email" class="form-control" placeholder="name@example.com">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Número de teléfono</label>
+                            <input id="telefono" type="text" class="form-control" placeholder="+54 0800-800">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="motivo" class="form-label">Motivo de la Consulta</label>
+                            <input id="motivo" type="text" class="form-control" placeholder="¿De que se trata?">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="texto" class="form-label">Consultas</label>
+                            <textarea id="texto" class="form-control" placeholder="Dejanos tu mensaje..." rows="3"></textarea>
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recibir correos sobre novedades y promociones</label>
+                        </div>
+                        
+                    <!-- Botón de enviar formulario -->
+                        <div class="col-auto">
+                            <a class="btn btn-success mb-3 text-white">Enviar</a>
+                        </div>
+                    </div>
                 </div>
-    
-            <div class="formularioInformacion">
-                <h4>Más información</h4> <br>
-                <form action="#">
-                    <ul>
-                        <li><i class="fa-solid fa-location-dot" style="color: red;"></i> Ubicación</li> <br>
-                        <li><i class="fa-solid fa-phone"></i> Contacto</li><br>
-                        <li><i class="fa-solid fa-globe"><a href="#"></a></i> Web</li><br>
-                    <p>No te quedes con dudas y escribinos en este formulario.</p>
-                    <p>_</p>
-                </ul>
-                </form>
             </div>
 
+        <!-- Mapa de ubicación -->
+            <div class="col">
+                <div class="card card-map rounded-circle border-5">
+                    <div class="card-body">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.071745457106!2d-58.83307702526276!3d-27.467025676321075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456ca0c84e09af%3A0xb763eed3997e5df0!2s9%20de%20Julio%201449%2C%20W3400%20AZB%2C%20Corrientes!5e0!3m2!1ses-419!2sar!4v1713802777065!5m2!1ses-419!2sar"
+                        class="rounded-circle" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
+
+<!-- Texto de instrucciones -->
+    <div class="text p-2">
+            <h4 class="text-center mb-4">Por favor, completa el formulario y nos pondremos en contacto contigo lo antes posible.</h4>
+    </div>
+
     <!-- Pie de página -->
     <footer>
         <div class="container text-center">
@@ -117,11 +126,12 @@
                 <a href="index.html"><img src="assets/img/icons/mapaicon1.ico" alt="..." width="90" height="90"></a>
             </div>
             <div class="footer-text">
-                &copy; 2024 Tu Sitio Web. Todos los derechos reservados.
+                &copy; 2024 Blendy. Todos los derechos reservados.
             </div>
         </div>
     </footer>
                 
+
     <!-- Bibliotecas JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
